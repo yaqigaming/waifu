@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+}
+
+a {
+  position: absolute;
+  font-size: 10px;
+  color: gray;
+  left: 320px;
+  bottom: 5px;
+  text-decoration: none;
+}
+
+#wrapper {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  perspective: 1200px;
+}
+
+#ipad {
+  transform: rotate3d(1, 0, 0, 30deg);
+  margin-bottom: 30px;
+}
+
+#ipad-border {
+  height: min-content;
+  width: min-content;
+  padding: 2px;
+  border-radius: 24px;
+  background: linear-gradient(131deg, #8a8a8a 0%, hsl(0, 0%, 41%) 100%);
+}
+
+#ipad-bezel {
+  background: #222222;
+  border-radius: inherit;
+  box-shadow: 0 0 #0000004d, 0 9px 20px #0000004a, 0 37px 37px #00000042,
+    0 84px 50px #00000026, 0 149px 60px #0000000a, 0 233px 65px #00000003;
+  padding: 18px;
+}
+
+#screen {
+  width: 700px;
+  aspect-ratio: 4/3;
+  background-color: black;
+  border-radius: 8px;
+  padding: 12px;
+  overflow: hidden;
+}
+
+#images {
+  display: grid;
+  grid-template-rows: repeat(7, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+.col {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 200ms;
+}
+
+.col:hover {
+  scale: 1.03;
+}
+
+/* --------------- IMAGES --------------- */
+
+.col:nth-child(17n) {
+  background-image: url(https://i.ibb.co/gTvCHtD/image-Pd-Bo-ZITk-Y-33264.jpg);
+}
+
+.col:nth-child(17n + 1) {
+  background-image: url(https://i.ibb.co/FnzYnXN/784753da8952947b50a96211742582ab.jpg);
+}
+
+.col:nth-child(17n + 2) {
+  background-image: url(https://i.ibb.co/S7hJR9f/414679196-1454670105449079-1565105446229342164-n-webp.jpg);
+}
+
+.col:nth-child(17n + 3) {
+  background-image: url(https://i.ibb.co/VHQNcWZ/4bb3af203008dc2b57b6e6ca96f1bc4d.jpg);
+}
+
+.col:nth-child(17n + 4) {
+  background-image: url(https://i.ibb.co/zb1FynG/ssstik-io-1694328252380.jpg);
+}
+
+.col:nth-child(17n + 5) {
+  background-image: url(https://i.ibb.co/0KKYfq9/402360187-1753934738422048-6925338157708298744-n-webp.jpg);
+}
+
+.col:nth-child(17n + 6) {
+  background-image: url(https://i.ibb.co/dkXCRxk/ssstik-io-1694328257753.jpg);
+}
+
+.col:nth-child(17n + 7) {
+  background-image: url(https://i.ibb.co/Xtsp37B/A.jpg);
+}
+
+.col:nth-child(17n + 8) {
+  background-image: url(https://i.ibb.co/DkPw6C0/2a1dba3b065dce9c06ea16e19d8621cc.jpg);
+}
+
+.col:nth-child(17n + 9) {
+  background-image: url(https://i.ibb.co/2qLYym9/b4cbe46bfeb4062d338362205487d324.jpg);
+}
+
+.col:nth-child(17n + 10) {
+  background-image: url(https://i.ibb.co/nR31XmS/0e590766743ebb8a28a373074475e338.jpg);
+}
+
+.col:nth-child(17n + 11) {
+  background-image: url(https://i.ibb.co/3NkBF4L/6d9a827501cf779b9926ee6fce4b3192.jpg);
+}
+
+.col:nth-child(17n + 12) {
+  background-image: url(https://i.ibb.co/jzq3GLT/abfbacce77889597de7faac626dc3073.jpg);
+}
+
+.col:nth-child(17n + 13) {
+  background-image: url(https://i.ibb.co/q1mNt7h/b8af52e9d43ff0cd3223d72ee338ff76.jpg);
+}
+
+.col:nth-child(17n + 14) {
+  background-image: url(https://i.ibb.co/rcLBXQz/b526f88cf4118a6f7317104c3d743c14.jpg);
+}
+
+.col:nth-child(17n + 15) {
+  background-image: url(https://i.ibb.co/bNVD3r1/f4d2f716059d8041010549b7c4b2312c.jpg);
+}
+
+.col:nth-child(17n + 16) {
+  background-image: url(https://i.ibb.co/XfQ21Px/c97a711bc00ded84e038134c42dad093.jpg);
+}
